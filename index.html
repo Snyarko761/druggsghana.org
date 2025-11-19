@@ -4,20 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DRUGGS Ghana — Health Equity through Access, Awareness &amp; Action</title>
-  <meta name="description" content="DRUGGS Ghana is a youth-led NGO in Accra advancing rational drug use, harm reduction, drug safety, health equity and research." />
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="DRUGGS Ghana is a youth-led NGO in Accra, Ghana advancing rational drug use, harm reduction, drug safety, health equity and research." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header" role="banner">
     <div class="wrap header-grid">
-      <div class="brand-block">
-        <img src="images/LOGO.jpg" alt="DRUGGS Ghana logo" class="logo-large">
+      <div class="brand-block" aria-hidden="false">
+        <img src="images/LOGO.jpg" alt="DRUGGS Ghana logo" class="logo-large" id="brand-logo" width="130" height="130">
         <div class="brand-copy">
           <h1 class="site-title">DRUGGS Ghana</h1>
           <p class="tagline">Health equity through <strong>Access · Awareness · Action</strong></p>
           <p class="registered">Registered in Accra, Ghana</p>
         </div>
       </div>
+
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="index.html" class="nav-item">Home</a>
         <a href="policies/policy-org.html" class="nav-item">Policy &amp; Governance</a>
@@ -30,53 +31,67 @@
   </header>
 
   <main>
-    <section class="hero wrap card">
+    <!-- Hero -->
+    <section class="hero wrap card reveal" aria-labelledby="hero-title">
       <div class="hero-inner">
-        <h2>Passion-driven, youth-led action for safer medicines and healthier communities</h2>
-        <p class="lead">DRUGGS Ghana (Dedicated to Rational Use of Generics and Global Standards) brings together early-career public-health professionals, pharmacists and community advocates to advance rational drug use, harm reduction, drug safety and research across Ghana.</p>
-        <p><a class="cta" href="policies/policy-org.html">View governance &amp; policies</a></p>
+        <h2 id="hero-title">Passion-driven, youth-led action for safer medicines and healthier communities</h2>
+        <p class="lead">DRUGGS Ghana (Dedicated to Rational Use of Generics and Global Standards) is a youth-led NGO registered in Accra. We advance rational drug use, harm reduction, drug safety, and evidence-driven research through community-led programs and policy engagement.</p>
+        <p><a class="cta" href="policies/policy-org.html">View our governance &amp; policies</a></p>
       </div>
     </section>
 
-    <section id="programs" class="wrap two-col">
+    <!-- Programs + Sidebar -->
+    <section id="programs" class="wrap two-col" aria-labelledby="programs-title">
       <article class="main-col">
-        <h3 class="section-title">Core Programmes</h3>
+        <h3 class="section-title" id="programs-title">Core Programmes</h3>
+
         <div class="program-grid">
-          <div class="program">
-            <h4>Rational Drug Use</h4>
-            <p>Prescriber training, stewardship tools, and community education aligned to WHO guidance.</p>
+          <div class="program reveal" tabindex="0" aria-labelledby="prog1">
+            <h4 id="prog1">Rational Drug Use</h4>
+            <p>Training for prescribers, stewardship tools and community education aligned to WHO guidance to ensure safe and rational prescribing.</p>
           </div>
-          <div class="program">
-            <h4>Harm Reduction &amp; Safety</h4>
-            <p>Youth-focused prevention, referrals, and harm-minimising community outreach.</p>
+
+          <div class="program reveal" tabindex="0" aria-labelledby="prog2">
+            <h4 id="prog2">Harm Reduction &amp; Safety</h4>
+            <p>Youth-focused prevention, referral pathways, and harm-minimising outreach for at-risk communities.</p>
           </div>
-          <div class="program">
-            <h4>Access to Essential Medicines</h4>
-            <p>Advocacy for quality generics and partnerships to strengthen local supply chains.</p>
+
+          <div class="program reveal" tabindex="0" aria-labelledby="prog3">
+            <h4 id="prog3">Access to Essential Medicines</h4>
+            <p>Advocacy for affordable quality generics and partnerships to strengthen local supply chains and pharmacy practice.</p>
           </div>
-          <div class="program">
-            <h4>Research &amp; Policy</h4>
-            <p>Operational research to inform national policy and practice; monitoring &amp; evaluation.</p>
+
+          <div class="program reveal" tabindex="0" aria-labelledby="prog4">
+            <h4 id="prog4">Research &amp; Policy</h4>
+            <p>Operational research, program evaluation and evidence-based policy recommendations for national stakeholders.</p>
           </div>
-          <div class="program">
-            <h4>Public Health Education</h4>
-            <p>School curricula, peer-education networks and culturally appropriate media campaigns.</p>
+
+          <div class="program reveal" tabindex="0" aria-labelledby="prog5">
+            <h4 id="prog5">Public Health Education</h4>
+            <p>School programs, peer educator networks and culturally appropriate media to build health literacy.</p>
           </div>
-          <div class="program">
-            <h4>Community Empowerment</h4>
-            <p>Capacity building and community advisory structures to ensure local ownership.</p>
+
+          <div class="program reveal" tabindex="0" aria-labelledby="prog6">
+            <h4 id="prog6">Community Empowerment</h4>
+            <p>Local capacity building, advisory groups and participatory design to ensure interventions are community-owned.</p>
           </div>
         </div>
 
-        <section class="approach card muted">
-          <h4>Our Approach</h4>
-          <p>We combine community engagement, youth leadership and scientific rigour. Projects are co-designed with community stakeholders, measured for impact, and governed transparently.</p>
+        <section class="approach card muted reveal" aria-labelledby="approach-title">
+          <h4 id="approach-title">Our Approach</h4>
+          <p>We combine community engagement, youth leadership and scientific rigour. Projects are co-designed with stakeholders, measured for impact, and governed with transparency and accountability.</p>
+        </section>
+
+        <section class="wrap card reveal" id="support" aria-labelledby="support-title">
+          <h3 id="support-title" class="section-title">Support our work</h3>
+          <p>Your contributions fund outreach, youth training and research. For donation details, contact <a href="mailto:info@druggsghana.org">info@druggsghana.org</a>. We accept local bank transfers and trusted payment processors.</p>
+          <p><a class="donate-btn btn-press" href="#donate">Get donation details</a></p>
         </section>
       </article>
 
-      <aside class="side-col">
-        <div class="panel card">
-          <h4>Quick facts</h4>
+      <aside class="side-col" aria-label="Sidebar">
+        <div class="panel card reveal" role="complementary" aria-labelledby="quick-facts">
+          <h4 id="quick-facts">Quick facts</h4>
           <ul class="facts">
             <li><strong>Base:</strong> Accra, Ghana</li>
             <li><strong>Type:</strong> Youth-led NGO</li>
@@ -84,34 +99,66 @@
           </ul>
         </div>
 
-        <div class="panel card image-panel">
-          <h4>Core Pillars</h4>
-          <img src="images/PILLARS.jpg" alt="Core pillars diagram" class="pillars-img">
-          <p class="caption">Three-part strategy: Access, Awareness, Action.</p>
+        <div class="panel card image-panel reveal" aria-labelledby="pillars-title">
+          <h4 id="pillars-title">Core Pillars</h4>
+          <img src="images/PILLARS.jpg" alt="DRUGGS Ghana core pillars diagram: Access, Awareness, Action" class="pillars-img" loading="lazy" style="max-width:260px;">
+          <p class="caption">Three-part strategy: Access · Awareness · Action.</p>
         </div>
 
-        <div class="panel card contact-panel">
-          <h4>Contact</h4>
+        <div class="panel card contact-panel reveal" aria-labelledby="contact-title">
+          <h4 id="contact-title">Contact</h4>
           <p>Email: <a href="mailto:info@druggsghana.org">info@druggsghana.org</a></p>
           <p>Address: Registered in Accra, Greater Accra Region</p>
         </div>
       </aside>
     </section>
 
-    <section class="wrap card" id="support">
-      <h3 class="section-title">Support our work</h3>
-      <p>Your contributions fund outreach, youth training and research. For donation details (local and international), contact <a href="mailto:info@druggsghana.org">info@druggsghana.org</a>.</p>
-      <p><a class="donate-btn" href="#donate">Get donation details</a></p>
+    <!-- Policies excerpt -->
+    <section class="wrap card reveal" aria-labelledby="policy-preview">
+      <h3 id="policy-preview" class="section-title">Policy &amp; Governance (preview)</h3>
+      <p>DRUGGS Ghana operates with transparency, scientific rigour and community partnership. Governance is led by a Board of Trustees and supported by a Technical Advisory Council to ensure programmatic quality.</p>
+      <p><a href="policies/policy-org.html">Read full policies &amp; download the registered document</a></p>
     </section>
 
-    <section class="wrap card" id="contact">
-      <h3 class="section-title">Governance &amp; Ethics</h3>
+    <!-- Team preview -->
+    <section class="wrap card reveal" aria-labelledby="team-preview">
+      <h3 id="team-preview" class="section-title">Our Team</h3>
+      <p>DRUGGS Ghana is youth-led and driven by early-career public-health practitioners, researchers and community volunteers.</p>
+
+      <div class="team-grid" role="list">
+        <article class="team-card reveal" role="listitem" aria-labelledby="member-simon">
+          <img src="images/simon-nyarko.png" alt="Simon Nyarko — Founder &amp; Executive Director" width="84" height="84" loading="lazy">
+          <h3 id="member-simon">Simon Nyarko</h3>
+          <div class="team-role">Founder &amp; Executive Director</div>
+          <div class="team-bio">Simon is a pharmaceutical and public-health practitioner who founded DRUGGS Ghana to improve access to safe medicines and reduce harms associated with drug misuse. He leads strategy, partnerships and research oversight.</div>
+          <div class="clear" aria-hidden="true"></div>
+        </article>
+
+        <article class="team-card reveal" role="listitem" aria-labelledby="member-vacant-1">
+          <img src="images/LOGO.jpg" alt="Placeholder" width="84" height="84" loading="lazy">
+          <h3 id="member-vacant-1">Program Lead (vacant)</h3>
+          <div class="team-role">Program Management</div>
+          <div class="team-bio">Responsible for field operations and community partnerships.</div>
+        </article>
+
+        <article class="team-card reveal" role="listitem" aria-labelledby="member-vacant-2">
+          <img src="images/LOGO.jpg" alt="Placeholder" width="84" height="84" loading="lazy">
+          <h3 id="member-vacant-2">Research Lead (vacant)</h3>
+          <div class="team-role">Research &amp; M&amp;E</div>
+          <div class="team-bio">Leads research design, monitoring and evaluation.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact & governance -->
+    <section id="contact" class="wrap card reveal" aria-labelledby="governance-title">
+      <h3 id="governance-title" class="section-title">Governance &amp; Ethics</h3>
       <p>All research activities follow ethical review and local regulatory requirements. Governance is overseen by a Board of Trustees and a Technical Advisory Council to ensure accountability and technical quality.</p>
       <p><a href="policies/policy-org.html">Read full policies &amp; governance</a></p>
     </section>
   </main>
 
-  <footer class="site-footer wrap">
+  <footer class="site-footer wrap" role="contentinfo">
     <div class="footer-inner">
       <small>© <span id="year"></span> DRUGGS Ghana — Dedicated to Rational Use of Generics &amp; Global Standards</small>
       <nav class="footer-nav" aria-label="Footer">
@@ -120,99 +167,95 @@
     </div>
   </footer>
 
+  <!-- Scripts: reveal, logo float, and responsive nav toggle -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // small responsive nav toggle
-    (function(){
-      function createToggle(){
-        if (document.getElementById('nav-toggle')) return;
-        const btn = document.createElement('button');
-        btn.id = 'nav-toggle';
-        btn.className = 'nav-toggle';
-        btn.setAttribute('aria-expanded','false');
-        btn.setAttribute('aria-label','Toggle navigation');
-        btn.innerHTML = '☰ Menu';
-        btn.style.cssText = 'display:none;position:fixed;right:16px;top:14px;z-index:1200;padding:.4rem .6rem;border-radius:6px;background:var(--navy);color:#fff;border:none';
-        document.body.appendChild(btn);
-        const nav = document.querySelector('.main-nav');
-        btn.addEventListener('click', ()=> {
-          const expanded = btn.getAttribute('aria-expanded') === 'true';
-          btn.setAttribute('aria-expanded', String(!expanded));
-          if (!expanded){
-            nav.style.display = 'flex';
-            nav.style.flexDirection = 'column';
-            nav.style.position = 'absolute';
-            nav.style.right = '16px';
-            nav.style.top = '78px';
-            nav.style.background = 'var(--card)';
-            nav.style.padding = '0.6rem';
-            nav.style.borderRadius = '8px';
-            nav.style.boxShadow = '0 8px 24px rgba(11,59,102,0.12)';
-          } else {
-            nav.style.display = '';
-            nav.style.position = '';
-            nav.style.flexDirection = '';
-            nav.style.background = '';
-            nav.style.padding = '';
-            nav.style.borderRadius = '';
-            nav.style.boxShadow = '';
+  (function(){
+    // Respect prefers-reduced-motion
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Scroll reveal implementation
+    function revealInit(){
+      const items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+      if (reduceMotion) { items.forEach(i => i.classList.add('revealed')); return; }
+      const obs = new IntersectionObserver((entries, obsr) => {
+        entries.forEach(e => {
+          if (e.isIntersecting){
+            e.target.classList.add('revealed');
+            obsr.unobserve(e.target);
           }
         });
-        function check(){
-          if (window.innerWidth <= 700){
-            btn.style.display = 'inline-block';
-            document.querySelector('.main-nav').style.display = 'none';
-          } else {
-            btn.style.display = 'none';
-            document.querySelector('.main-nav').style.display = '';
-          }
-        }
-        window.addEventListener('resize', check);
-        check();
-      }
-      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', createToggle);
-      else createToggle();
-    })();
-  </script>
-  <script>
-/* Scroll reveal & gentle logo float (lightweight) */
-(function(){
-  // Respect prefers-reduced-motion
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      }, { threshold: 0.12 });
+      items.forEach(i => obs.observe(i));
+    }
 
-  // Reveal on scroll using IntersectionObserver
-  function revealInit(){
-    const items = document.querySelectorAll('.reveal');
-    if (!items.length) return;
-    if (reduceMotion) { items.forEach(i => i.classList.add('revealed')); return; }
-    const obs = new IntersectionObserver((entries, obsr) => {
-      entries.forEach(e => {
-        if (e.isIntersecting){
-          e.target.classList.add('revealed');
-          obsr.unobserve(e.target);
+    // Floating logo
+    function logoInit(){
+      const logo = document.getElementById('brand-logo');
+      if (!logo || reduceMotion) return;
+      setTimeout(()=> logo.classList.add('logo-float'), 700);
+      logo.addEventListener('mouseenter', ()=> logo.style.animationPlayState='paused');
+      logo.addEventListener('mouseleave', ()=> logo.style.animationPlayState='running');
+    }
+
+    // Small responsive nav toggle for very narrow screens
+    function navToggleInit(){
+      if (document.getElementById('nav-toggle')) return;
+      const btn = document.createElement('button');
+      btn.id = 'nav-toggle';
+      btn.className = 'nav-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.setAttribute('aria-label','Toggle navigation');
+      btn.innerHTML = '☰ Menu';
+      btn.style.cssText = 'display:none;position:fixed;right:16px;top:14px;z-index:1200;padding:.4rem .6rem;border-radius:6px;background:var(--navy);color:#fff;border:none';
+      document.body.appendChild(btn);
+      const nav = document.querySelector('.main-nav');
+      if (!nav) return;
+      btn.addEventListener('click', ()=> {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if (!expanded){
+          nav.style.display = 'flex';
+          nav.style.flexDirection = 'column';
+          nav.style.position = 'absolute';
+          nav.style.right = '16px';
+          nav.style.top = '78px';
+          nav.style.background = 'var(--card)';
+          nav.style.padding = '0.6rem';
+          nav.style.borderRadius = '8px';
+          nav.style.boxShadow = '0 8px 24px rgba(11,59,102,0.12)';
+        } else {
+          nav.style.display = '';
+          nav.style.position = '';
+          nav.style.flexDirection = '';
+          nav.style.background = '';
+          nav.style.padding = '';
+          nav.style.borderRadius = '';
+          nav.style.boxShadow = '';
         }
       });
-    }, { threshold: 0.12 });
-    items.forEach(i => obs.observe(i));
-  }
+      function check(){
+        if (window.innerWidth <= 700){
+          btn.style.display = 'inline-block';
+          document.querySelector('.main-nav').style.display = 'none';
+        } else {
+          btn.style.display = 'none';
+          document.querySelector('.main-nav').style.display = '';
+        }
+      }
+      window.addEventListener('resize', check);
+      check();
+    }
 
-  // Floating logo toggle
-  function logoInit(){
-    const logo = document.querySelector('.logo-large');
-    if (!logo || reduceMotion) return;
-    // Add float class after small delay for nicer initial paint
-    setTimeout(()=> logo.classList.add('logo-float'), 700);
-    // Pause on hover
-    logo.addEventListener('mouseenter', ()=> logo.style.animationPlayState='paused');
-    logo.addEventListener('mouseleave', ()=> logo.style.animationPlayState='running');
-  }
+    // set year
+    function setYear(){ const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear(); }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ()=> { revealInit(); logoInit(); });
-  } else {
-    revealInit(); logoInit();
-  }
-})();
-</script>
+    if (document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', ()=> { revealInit(); logoInit(); navToggleInit(); setYear(); });
+    } else {
+      revealInit(); logoInit(); navToggleInit(); setYear();
+    }
+  })();
+  </script>
 </body>
 </html>
