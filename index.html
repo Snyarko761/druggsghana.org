@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DRUGGS Ghana — Health Equity through Access, Awareness &amp; Action</title>
+  <meta name="description" content="DRUGGS Ghana is a youth-led NGO in Accra advancing rational drug use, harm reduction, drug safety, health equity and research." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrap header-grid">
+      <div class="brand-block">
+        <img src="images/LOGO.jpg" alt="DRUGGS Ghana logo" class="logo-large">
+        <div class="brand-copy">
+          <h1 class="site-title">DRUGGS Ghana</h1>
+          <p class="tagline">Health equity through <strong>Access · Awareness · Action</strong></p>
+          <p class="registered">Registered in Accra, Ghana</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="policies/policy-org.html" class="nav-item">Policy &amp; Governance</a>
+        <a href="team.html" class="nav-item">Team</a>
+        <a href="#programs" class="nav-item">Programs</a>
+        <a href="#contact" class="nav-item">Contact</a>
+        <a href="#donate" class="nav-item donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap card">
+      <div class="hero-inner">
+        <h2>Passion-driven, youth-led action for safer medicines and healthier communities</h2>
+        <p class="lead">DRUGGS Ghana (Dedicated to Rational Use of Generics and Global Standards) brings together early-career public-health professionals, pharmacists and community advocates to advance rational drug use, harm reduction, drug safety and research across Ghana.</p>
+        <p><a class="cta" href="policies/policy-org.html">View governance &amp; policies</a></p>
+      </div>
+    </section>
+
+    <section id="programs" class="wrap two-col">
+      <article class="main-col">
+        <h3 class="section-title">Core Programmes</h3>
+        <div class="program-grid">
+          <div class="program">
+            <h4>Rational Drug Use</h4>
+            <p>Prescriber training, stewardship tools, and community education aligned to WHO guidance.</p>
+          </div>
+          <div class="program">
+            <h4>Harm Reduction &amp; Safety</h4>
+            <p>Youth-focused prevention, referrals, and harm-minimising community outreach.</p>
+          </div>
+          <div class="program">
+            <h4>Access to Essential Medicines</h4>
+            <p>Advocacy for quality generics and partnerships to strengthen local supply chains.</p>
+          </div>
+          <div class="program">
+            <h4>Research &amp; Policy</h4>
+            <p>Operational research to inform national policy and practice; monitoring &amp; evaluation.</p>
+          </div>
+          <div class="program">
+            <h4>Public Health Education</h4>
+            <p>School curricula, peer-education networks and culturally appropriate media campaigns.</p>
+          </div>
+          <div class="program">
+            <h4>Community Empowerment</h4>
+            <p>Capacity building and community advisory structures to ensure local ownership.</p>
+          </div>
+        </div>
+
+        <section class="approach card muted">
+          <h4>Our Approach</h4>
+          <p>We combine community engagement, youth leadership and scientific rigour. Projects are co-designed with community stakeholders, measured for impact, and governed transparently.</p>
+        </section>
+      </article>
+
+      <aside class="side-col">
+        <div class="panel card">
+          <h4>Quick facts</h4>
+          <ul class="facts">
+            <li><strong>Base:</strong> Accra, Ghana</li>
+            <li><strong>Type:</strong> Youth-led NGO</li>
+            <li><strong>Focus:</strong> Drug safety, rational use, harm reduction, research</li>
+          </ul>
+        </div>
+
+        <div class="panel card image-panel">
+          <h4>Core Pillars</h4>
+          <img src="images/PILLARS.jpg" alt="Core pillars diagram" class="pillars-img">
+          <p class="caption">Three-part strategy: Access, Awareness, Action.</p>
+        </div>
+
+        <div class="panel card contact-panel">
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:info@druggsghana.org">info@druggsghana.org</a></p>
+          <p>Address: Registered in Accra, Greater Accra Region</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="wrap card" id="support">
+      <h3 class="section-title">Support our work</h3>
+      <p>Your contributions fund outreach, youth training and research. For donation details (local and international), contact <a href="mailto:info@druggsghana.org">info@druggsghana.org</a>.</p>
+      <p><a class="donate-btn" href="#donate">Get donation details</a></p>
+    </section>
+
+    <section class="wrap card" id="contact">
+      <h3 class="section-title">Governance &amp; Ethics</h3>
+      <p>All research activities follow ethical review and local regulatory requirements. Governance is overseen by a Board of Trustees and a Technical Advisory Council to ensure accountability and technical quality.</p>
+      <p><a href="policies/policy-org.html">Read full policies &amp; governance</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-inner">
+      <small>© <span id="year"></span> DRUGGS Ghana — Dedicated to Rational Use of Generics &amp; Global Standards</small>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="policies/policy-org.html">Policies</a> — <a href="team.html">Team</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // small responsive nav toggle
+    (function(){
+      function createToggle(){
+        if (document.getElementById('nav-toggle')) return;
+        const btn = document.createElement('button');
+        btn.id = 'nav-toggle';
+        btn.className = 'nav-toggle';
+        btn.setAttribute('aria-expanded','false');
+        btn.setAttribute('aria-label','Toggle navigation');
+        btn.innerHTML = '☰ Menu';
+        btn.style.cssText = 'display:none;position:fixed;right:16px;top:14px;z-index:1200;padding:.4rem .6rem;border-radius:6px;background:var(--navy);color:#fff;border:none';
+        document.body.appendChild(btn);
+        const nav = document.querySelector('.main-nav');
+        btn.addEventListener('click', ()=> {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          if (!expanded){
+            nav.style.display = 'flex';
+            nav.style.flexDirection = 'column';
+            nav.style.position = 'absolute';
+            nav.style.right = '16px';
+            nav.style.top = '78px';
+            nav.style.background = 'var(--card)';
+            nav.style.padding = '0.6rem';
+            nav.style.borderRadius = '8px';
+            nav.style.boxShadow = '0 8px 24px rgba(11,59,102,0.12)';
+          } else {
+            nav.style.display = '';
+            nav.style.position = '';
+            nav.style.flexDirection = '';
+            nav.style.background = '';
+            nav.style.padding = '';
+            nav.style.borderRadius = '';
+            nav.style.boxShadow = '';
+          }
+        });
+        function check(){
+          if (window.innerWidth <= 700){
+            btn.style.display = 'inline-block';
+            document.querySelector('.main-nav').style.display = 'none';
+          } else {
+            btn.style.display = 'none';
+            document.querySelector('.main-nav').style.display = '';
+          }
+        }
+        window.addEventListener('resize', check);
+        check();
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', createToggle);
+      else createToggle();
+    })();
+  </script>
+</body>
+</html>
