@@ -174,5 +174,45 @@
       else createToggle();
     })();
   </script>
+  <script>
+/* Scroll reveal & gentle logo float (lightweight) */
+(function(){
+  // Respect prefers-reduced-motion
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Reveal on scroll using IntersectionObserver
+  function revealInit(){
+    const items = document.querySelectorAll('.reveal');
+    if (!items.length) return;
+    if (reduceMotion) { items.forEach(i => i.classList.add('revealed')); return; }
+    const obs = new IntersectionObserver((entries, obsr) => {
+      entries.forEach(e => {
+        if (e.isIntersecting){
+          e.target.classList.add('revealed');
+          obsr.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(i => obs.observe(i));
+  }
+
+  // Floating logo toggle
+  function logoInit(){
+    const logo = document.querySelector('.logo-large');
+    if (!logo || reduceMotion) return;
+    // Add float class after small delay for nicer initial paint
+    setTimeout(()=> logo.classList.add('logo-float'), 700);
+    // Pause on hover
+    logo.addEventListener('mouseenter', ()=> logo.style.animationPlayState='paused');
+    logo.addEventListener('mouseleave', ()=> logo.style.animationPlayState='running');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ()=> { revealInit(); logoInit(); });
+  } else {
+    revealInit(); logoInit();
+  }
+})();
+</script>
 </body>
 </html>
